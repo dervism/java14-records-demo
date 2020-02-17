@@ -1,4 +1,4 @@
-# Java 14 demo
+# Java 14 Records demo
 
 ### Prerequisites (tested with Mac)
 
