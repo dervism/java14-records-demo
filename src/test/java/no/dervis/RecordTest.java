@@ -1,9 +1,11 @@
 package no.dervis;
 
+import no.dervis.Record.Animal;
 import org.junit.jupiter.api.Test;
 
-import static no.dervis.Record.AnimalType.Fish;
-import static no.dervis.Record.AnimalType.Mammal;
+import static no.dervis.Record.AnimalType.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class RecordTest {
 
@@ -25,10 +27,10 @@ class RecordTest {
 
     @Test
     void propertiesEquals() {
-        var elephant = new Animal("Elephant", 10, Mammal);
+        var elephant = new Animal("Sparrow", 1, Bird);
 
-        assertEquals(elephant.name(), "Elephant");
-        assertEquals(elephant.age(), 10);
-        assertEquals(elephant.type(), Mammal);
+        assertEquals(elephant.name(), "Sparrow");
+        assertEquals(elephant.age(), 1);
+        assertEquals(elephant.type(), Bird);
     }
 }
